@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+black: #000000
+navy: #150050
+purple: #3F0071
+pink: #FB2576 
+*/
+
+body {
+    padding: 0 60px;
+    background-color: #000000;
+    color:white;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FB2576;
+    text-shadow: 2px 2px 30px #FB2576;
+}
+
+header button {
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 66px;
+    color: white;
+    background: linear-gradient(to right, #3F0071, #FB2576);
+}
+
+/* Karsilama Alani */
+.hero {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0px;
+}
+
+/* Karsilama Alani: Sol taraf */
+.hero .left {
+    max-width: 700px;
+}
+
+.hero .left h1 {
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.hero .left h1 span {
+    color: aqua;
+}
+
+.left-info {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.left-info div {
+    width: 100px;
+    height: 100px;
+    background-color: #21D4FD;
+    background-image: linear-gradient(110deg, #21D4FD 0%, #B721FF 100%);
+    font-size: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.left-info div:hover {
+    background-image: linear-gradient(180deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.left-info p {
+    max-width: 300px;
+}
+
+/* Karsilama Alani: Sag Taraf */
+.hero .right {
+    max-width: 700px;
+}
+
+.hero .right img {
+    width: 100%;
+}
+
+/* Brands */
+.brands-sec {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+    gap: 40px;
+}
+
+/* Drops */
+.drops-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.drops-sec h1 {
+    font-size: 45px;
+}
+
+.drops-sec .categories ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.drops-sec .categories ul li {
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.drops-sec .categories ul li:hover {
+    background-image: linear-gradient(180deg, #21D4FD 0%, #B721FF 100%);
+}
+
+/* Kartlar */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+/* Kart */
+.card {
+    width: 280px;
+    min-height: 400px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-price div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-price div img {
+    width: 20px;
+}
+
+.card-price div p {
+    color: #3F0071;
+    font-weight: bold;
+}
+
+.card-price small {
+
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+}
+
+.card-footer p {
+    background-color: gray;
+    color: #3F0071;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.card-footer button {
+    border: none;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.card-footer button:hover {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Reklam Alani */
+.add {
+    background-color: #21d4fd;
+    margin: 100px -100px;
+    text-align: center;
+    font-size: 116px;
+    font-weight: 600;
+    transform: rotate(-6deg);
+    letter-spacing: 30px;
+    white-space: normal;
+    text-shadow: 2px 2px 20px white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Bilgi Kutucuklari */
+.info {
+    margin: 200px 0;
+}
+
+.info h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.info-card {
+    background-color: #3F0071;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.info-card img {
+    width: 50px;
+}
+
+.nav-button {
+    display: none;
+}
+
+/* Responsive */
+@media (min-width:1300px) {
+    .hero .left {
+        max-width: 900px;
+    }
+
+    .left-info p {
+        max-width: 600px;
+    }
+}
+
+@media (max-width:1500px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .left {
+        max-width: 900px;
+    }
+
+    .hero .right {
+        order: -1;
+    }
+}
+
+@media (max-width:800px) {
+    .cards {
+        justify-content: center;
+    }
+
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+    .left-info div {
+        padding: 0 30px;
+       
+    }
+}
